@@ -31,13 +31,13 @@ Pick a model and ensemble member in the menu on the left to find the dataset id 
 | Model | Member | Monthly | Daily | 6-hourly |
 | --- | --- | --- | --- | --- |
 | [IFS-FESOM2-SR](ifs-fesom/) | [1](ifs-fesom/member-1) | Atmosphere and ocean, 2D and 3D | Atmosphere and ocean, 2D and 3D | Atmosphere, 2D and 3D |
-| | [2](ifs-fesom/member-2), [3](ifs-fesom/member-3) | Atmosphere, 2D and 3D | Atmosphere 2D and 3D, ocean 2D | Atmosphere, 2D and 3D |
+| | [2](ifs-fesom/member-2), [3](ifs-fesom/member-3) (1975-2030) | Atmosphere, 2D and 3D | Atmosphere 2D and 3D, ocean 2D | Atmosphere, 2D and 3D |
 | [ICON-ESM-ER](icon/) | [1](icon/member-1) | Atmosphere and ocean, 2D and 3D | Atmosphere and ocean, 2D and 3D | Atmosphere, 2D and 3D (plus hourly 2D) |
 | | [2](icon/member-2), [3](icon/member-3) | Atmosphere and ocean, 2D | Atmosphere 2D, ocean 2D and upper 5 levels | None |
 | [IFS-NEMO-ER](ifs-nemo) | 1 | Atmosphere, ocean and sea ice | Control run only | On Levante only |
 | [HadGEM3-GC5E](hadgem) | 1 | Atmosphere | None | None |
 
-**Experiments:** `hist-1950` (1950-2014), `highres-future-ssp245` (2015-2050) and `eerie-control-1950` (constant 1950 forcing). Members 2 and 3 cover the historical and SSP2-4.5 periods.
+**Experiments:** `hist-1950` (historical, from 1950), `highres-future-ssp245` (SSP2-4.5, from 2015) and `eerie-control-1950` (constant 1950 forcing). Time coverage differs between models and members; the IFS-FESOM page has a coverage table.
 
 ## Other sources
 
