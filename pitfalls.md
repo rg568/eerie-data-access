@@ -7,6 +7,9 @@ nav_order: 8
 
 - **Dataset names differ between experiments.** ICON in particular renames some datasets between `hist-1950` and `highres-future-ssp245`. Use the tables on the member pages or list the ids (see [Getting started](getting-started)).
 - **Variable names differ between models.** SST is `avg_tos` in IFS-FESOM, `to` in ICON and `tos` in IFS-NEMO and HadGEM3.
+- **IFS-FESOM atmosphere layout:** the 0.25° atmosphere fields are stored on one flattened `value` dimension. Reshape them with `to_latlon()` from the [IFS-FESOM page](ifs-fesom/). Ocean fields already have `lat` and `lon`.
+- **Ensemble member coverage:** IFS-FESOM members 2 and 3 cover 1975-2014 and 2015-2030 only; member 1 covers 1950-2014 and 2015-2070 (atmosphere) or 2015-2050 (ocean).
+- **Chunking:** each chunk on the cloud holds one time step of the full globe, so even a single-point time series downloads the whole globe for every step. Long daily or 6-hourly series are slow; use monthly data where you can, and save extracted series locally if you will reuse them.
 - **Subset first.** 3D daily and 6-hourly datasets are very large. Select time, region and levels before `.load()`, and check `.nbytes`.
 - **IFS-NEMO members 2 and 3** start in 1975; some historical files contain earlier data, so apply `.sel(time=slice("1975", None))`.
 - **ICON members 2 and 3:** check time stamps; some output is stamped at the end of the averaging period.
