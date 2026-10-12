@@ -1,0 +1,11 @@
+title: EERIE km-scale model data
+description: How to access EERIE coupled model output, on and off Levante
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+search_enabled: true
+heading_anchors: true
+aux_links:
+  "Repository": "https://github.com/rg568/eerie-data-access"
+footer_content: "Maintained by Rohit Ghosh. Corrections welcome via GitHub issues."
+last_edit_timestamp: true
